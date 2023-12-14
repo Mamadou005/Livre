@@ -10,20 +10,20 @@ public class Livre {
   public String getAuteur(){
       return auteur;
   }
-  public getTitre(){
+  public String getTitre(){
       return titre;
   }
-  public getNbPages(){
+  public int getNbPages(){
       return nbPages;
   }
-  public setAuteur(String unTitre){
+  public void setAuteur(String unAuteur){
       auteur = unAuteur;
   }
-  public setTitre(String unTitre){
+  public void setTitre(String unTitre){
       titre = unTitre;
   }
   public void setNbPages(int n){
-      if(n >0){
+      if(n > 0){
           nbPages = n;
       }else {
           System.out.println("Erreur");
@@ -31,14 +31,17 @@ public class Livre {
   }
   public static void main(String[] args)
   {
-      Livre Livre1 = new Livre("Auteur1");
-      Livre Livre2 = new Livre("Auteur2");
+      Livre livre1 = new 
+      Livre("Auteur1" ,"Titre1");
+      Livre livre2 = 
+      new Livre("Auteur2" , "Titre1");
+                   
+          livre1.setNbPages(100);
+          livre2.setNbPages(150);
           
           System.out.println("Auteur du livre 1 : " + livre1.getAuteur());
           System.out.println("Auteur du livre 2 : " + livre2.getAuteur());
-          
-          livre1.setNbPages = (100);
-          livre2.setNbPages = (150);
+ 
           
               System.out.println("Le nombre de pages du livre 1 :" + livre1.getNbPages());
               System.out.println("Le nombre de pages du livre 2 :" + livre2.getNbPages());
